@@ -63,9 +63,8 @@ body[data-theme="night"] {
 
 #home,
 #skills,
-#portfolio,
-#about {
-  min-height: 80vh;
+#projects {
+  min-height: calc(100vh - 60px);
   padding: 0 3em;
 }
 
@@ -75,7 +74,7 @@ body[data-theme="night"] {
 
 #pc-switch-theme {
   position: fixed;
-  left: 50%;
+  right: 0;
   bottom: 25px;
   transform: translateX(-50%);
   display: flex;
@@ -86,9 +85,15 @@ body[data-theme="night"] {
   border: none;
   outline: none;
   border-radius: 50%;
+  opacity: 0.9;
   cursor: pointer;
   font-size: 1.75em;
   transition: all 0.5s;
+}
+
+#pc-switch-theme:hover {
+  opacity: 1;
+  box-shadow: #00000029 0px 1px 4px;
 }
 
 body[data-theme="day"] #pc-switch-theme {
@@ -125,15 +130,14 @@ body[data-theme="night"] #pc-switch-theme .fa-sun {
   }
 }
 
-@media only screen and (max-width: 640px) {
-  #pc-switch-theme {
-    left: unset;
-    right: 0;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   body {
     font-size: 12px;
+  }
+
+  #home,
+  #skills,
+  #projects {
+    padding: 0 1em;
   }
 }

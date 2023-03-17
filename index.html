@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/banner.css" />
     <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="scripts.js" defer></script>
     <title>Portfólio | PaulloClara</title>
@@ -55,8 +56,8 @@
       <ul class="pc-header-links">
         <li><a class="pc-header-link" href="#home">Home</a></li>
         <li><a class="pc-header-link" href="#skills">Skills</a></li>
-        <li><a class="pc-header-link" href="#portfolio">Portfólio</a></li>
-        <li><a class="pc-header-link" href="#about">Sobre</a></li>
+        <li><a class="pc-header-link" href="#projects">Projetos</a></li>
+        <li><a class="pc-header-link" href="docs/cv.pdf" download>CV</a></li>
       </ul>
     </header>
     <main class="pc-sections">
@@ -221,8 +222,75 @@
           </li>
         </ul>
       </section>
-      <section class="pc-portfolio" id="portfolio"></section>
-      <section class="pc-about" id="about"></section>
+      <section class="pc-projects" id="projects">
+        <div class="pc-projects-infos">
+          <h3 class="pc-projects-title">
+            Meus projetos <b>pessoais</b> e <b>profissionais</b>
+          </h3>
+          <p class="pc-projects-summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            rerum ipsa, cupiditate ad aut exercitationem! Ullam optio molestias
+            earum impedit molestiae ipsa quos omnis. Dicta aperiam nam quasi
+            modi obcaecati
+          </p>
+        </div>
+        <ul class="pc-projects-items">
+          <li class="pc-projects-item">
+            <img
+              class="pc-projects-item-preview"
+              src="https://raw.githubusercontent.com/PaulloClara/be-the-hero/78c75c6452cf11fb42e4e622d7adc86d54c75de1/.github/screens.svg"
+              alt="BeTheHero"
+            />
+            <h4 class="pc-projects-item-name">Be The Hero</h4>
+            <p class="pc-projects-item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              dolores corrupti accusantium eaque sit obcaecati soluta. Incidunt
+              assumenda, neque asperiores ut id doloremque nisi architecto esse
+              commodi. Animi, nesciunt autem!
+            </p>
+            <div class="pc-projects-item-links">
+              <a
+                class="pc-projects-item-link"
+                href="https://github.com/PaulloClara/be-the-hero"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Github
+              </a>
+              <a class="pc-projects-item-link" href="#" target="_blank">
+                <i class="fa-solid fa-earth-americas"></i> Demo
+              </a>
+            </div>
+          </li>
+          <li class="pc-projects-item">
+            <img
+              class="pc-projects-item-preview"
+              src="https://raw.githubusercontent.com/PaulloClara/be-the-hero/78c75c6452cf11fb42e4e622d7adc86d54c75de1/.github/screens.svg"
+              alt="BeTheHero"
+            />
+            <h4 class="pc-projects-item-name">Conversor de Moedas</h4>
+            <p class="pc-projects-item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              dolores corrupti accusantium eaque sit obcaecati soluta.
+            </p>
+            <div class="pc-projects-item-links">
+              <a
+                class="pc-projects-item-link"
+                href="https://github.com/PaulloClara/currency-converter"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i> Github
+              </a>
+              <a
+                class="pc-projects-item-link"
+                href="https://paulloclara.github.io/currency-converter/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-earth-americas"></i> Demo
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
       <button id="pc-switch-theme">
         <i class="fa-regular fa-sun"></i>
         <i class="fa-regular fa-moon"></i>

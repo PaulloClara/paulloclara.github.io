@@ -119,10 +119,6 @@ body[data-theme="night"] .pc-banner-background.night {
 }
 
 @media only screen and (max-width: 480px) {
-  .pc-banner {
-    padding: 12px;
-  }
-
   .pc-banner-content h2 {
     font-size: 3.75em;
   }

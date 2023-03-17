@@ -47,7 +47,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 2.75em;
+  height: 2.5em;
   list-style: none;
 }
 
@@ -91,5 +91,29 @@
   }
   100% {
     width: var(--skill-percentage);
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .pc-skills {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pc-skills-items {
+    max-width: 680px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .pc-skills-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pc-skills-title {
+    font-size: 1.75em;
   }
 }
