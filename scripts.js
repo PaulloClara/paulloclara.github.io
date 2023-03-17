@@ -67,7 +67,8 @@ function switchBackgroundSoundByTheme(theme) {
   try {
     const backgroundSoundEl = document.querySelector("#pc-background-sound");
     backgroundSoundEl.pause();
-    const currentSound = theme === "day" ? "hollow-knight.mp3" : "radiance.mp3";
+    const currentSound =
+      theme === "day" ? "sounds/hollow-knight.mp3" : "sounds/radiance.mp3";
     backgroundSoundEl.getElementsByTagName("source")[0].src = currentSound;
     backgroundSoundEl.load();
     backgroundSoundEl.play();

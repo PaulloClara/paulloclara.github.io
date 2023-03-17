@@ -165,13 +165,13 @@ body[data-theme="night"] {
   width: 100%;
 }
 
-body[data-theme="day"] .pc-banner-background.light {
+body[data-theme="day"] .pc-banner-background.day {
   display: flex;
   max-width: 460px;
   animation: banner-background-day-animation 8s ease-in-out infinite;
 }
 
-body[data-theme="night"] .pc-banner-background.dark {
+body[data-theme="night"] .pc-banner-background.night {
   display: flex;
   max-width: 540px;
   filter: drop-shadow(0 0 0.75rem var(--primary-text-color));
