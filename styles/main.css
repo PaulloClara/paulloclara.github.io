@@ -65,7 +65,7 @@ body[data-theme="night"] {
 #skills,
 #portfolio,
 #about {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .pc-sections {

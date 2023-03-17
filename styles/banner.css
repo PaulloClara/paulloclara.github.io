@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 3em;
+  padding: 0 3em;
   transition: all 0.5s;
 }
 
 .pc-banner-content {
   position: relative;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
 }
 
@@ -57,7 +57,7 @@ body[data-theme="day"] .pc-banner-background.day {
 
 body[data-theme="night"] .pc-banner-background.night {
   display: flex;
-  max-width: 540px;
+  max-width: 520px;
   filter: drop-shadow(0 0 0.75rem var(--primary-text-color));
   animation: banner-background-night-animation 8s ease-in-out infinite;
 }

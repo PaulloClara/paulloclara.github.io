@@ -1,12 +1,21 @@
 .pc-header {
-  position: absolute;
+  position: sticky;
   top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 3em;
+  padding: 0.5em 3em;
+  z-index: 9;
+  backdrop-filter: blur(8px);
+}
+
+body[data-theme="day"] .pc-header {
+  background-color: #fff8;
+}
+
+body[data-theme="night"] .pc-header {
+  background-color: #0001;
 }
 
 .pc-header-logo {
