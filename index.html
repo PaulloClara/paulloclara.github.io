@@ -39,91 +39,96 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="scripts.js" defer></script>
     <title>Portfólio | PaulloClara</title>
   </head>
   <body data-theme="day">
-    <section class="pc-banner" id="home">
-      <header class="pc-header">
-        <a class="pc-header-logo" href="#home">
-          ~/<span>Meu</span>/<span>Portfólio</span><b>$</b>
-        </a>
-        <ul class="pc-header-links">
-          <li><a class="pc-header-link" href="#home">Home</a></li>
-          <li><a class="pc-header-link" href="#skills">Skills</a></li>
-          <li><a class="pc-header-link" href="#portfolio">Portfólio</a></li>
-          <li><a class="pc-header-link" href="#about">Sobre</a></li>
-        </ul>
-      </header>
-      <div class="pc-banner-content">
-        <h3>Olá_</h3>
-        <h2><b>Eu sou</b> <span id="pc-banner-typing-animation"></span></h2>
-        <p class="pc-banner-summary">
-          Sou um desenvolvedor web front-end com quase 3 anos de experiência em
-          HTML, CSS, JavaScript, VueJS, SEO e muito mais. Minha paixão é criar
-          interfaces incríveis que não apenas sejam bonitas, mas também fáceis
-          de usar e escaláveis. Se você precisar de alguém com minhas
-          habilidades, entre em contato!
-        </p>
-      </div>
-      <img
-        class="pc-banner-background day"
-        src="images/hollow-knight-day.png"
-        alt="Banner"
-      />
-      <img
-        class="pc-banner-background night"
-        src="images/hollow-knight-night.png"
-        alt="Banner"
-      />
-      <ul class="pc-social-media-links">
-        <li>
-          <a
-            class="pc-social-media-link"
-            href="https://github.com/PaulloClara"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            class="pc-social-media-link"
-            href="https://www.linkedin.com/in/paulloclara/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            class="pc-social-media-link"
-            href="https://t.me/paulloclara"
-            target="_blank"
-          >
-            <i class="fa-brands fa-telegram"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            class="pc-social-media-link"
-            href="https://wa.me/5586988000821"
-            target="_blank"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-        </li>
+    <header class="pc-header">
+      <a class="pc-header-logo" href="#home">
+        ~/<span>Meu</span>/<span>Portfólio</span><b>$</b>
+      </a>
+      <ul class="pc-header-links">
+        <li><a class="pc-header-link" href="#home">Home</a></li>
+        <li><a class="pc-header-link" href="#skills">Skills</a></li>
+        <li><a class="pc-header-link" href="#portfolio">Portfólio</a></li>
+        <li><a class="pc-header-link" href="#about">Sobre</a></li>
       </ul>
+    </header>
+    <main class="pc-sections">
+      <section class="pc-banner" id="home">
+        <div class="pc-banner-content">
+          <h3>Olá_</h3>
+          <h2><b>Eu sou</b> <span id="pc-banner-typing-animation"></span></h2>
+          <p class="pc-banner-summary">
+            Sou um desenvolvedor web front-end com quase 3 anos de experiência
+            em HTML, CSS, JavaScript, VueJS, SEO e muito mais. Minha paixão é
+            criar interfaces incríveis que não apenas sejam bonitas, mas também
+            fáceis de usar e escaláveis. Se você precisar de alguém com minhas
+            habilidades, entre em contato!
+          </p>
+        </div>
+        <img
+          class="pc-banner-background day"
+          src="images/hollow-knight-day.png"
+          alt="Banner"
+        />
+        <img
+          class="pc-banner-background night"
+          src="images/hollow-knight-night.png"
+          alt="Banner"
+        />
+        <ul class="pc-banner-social-links">
+          <li>
+            <a
+              class="pc-banner-social-link"
+              href="https://github.com/PaulloClara"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="pc-banner-social-link"
+              href="https://www.linkedin.com/in/paulloclara/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="pc-banner-social-link"
+              href="https://t.me/paulloclara"
+              target="_blank"
+            >
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="pc-banner-social-link"
+              href="https://wa.me/5586988000821"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="pc-skills" id="skills"></section>
+      <section class="pc-portfolio" id="portfolio"></section>
+      <section class="pc-about" id="about"></section>
+
       <button id="pc-switch-theme">
         <i class="fa-regular fa-sun"></i>
         <i class="fa-regular fa-moon"></i>
       </button>
-    </section>
-    <section class="pc-skills" id="skills"></section>
-    <section class="pc-portfolio" id="portfolio"></section>
-    <section class="pc-about" id="about"></section>
+    </main>
     <audio id="pc-background-sound" autoplay loop>
       <source type="audio/mpeg" />
     </audio>
