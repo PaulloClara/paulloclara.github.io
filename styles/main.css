@@ -66,6 +66,7 @@ body[data-theme="night"] {
 #portfolio,
 #about {
   min-height: 80vh;
+  padding: 0 3em;
 }
 
 .pc-sections {

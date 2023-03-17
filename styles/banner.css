@@ -3,8 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100vh;
-  padding: 0 3em;
   transition: all 0.5s;
 }
 
@@ -33,7 +31,7 @@
 }
 
 .pc-banner-summary {
-  max-width: 700px;
+  max-width: 680px;
   margin: 12px 0;
   color: var(--secondary-text-color);
   font-size: 1.2em;
