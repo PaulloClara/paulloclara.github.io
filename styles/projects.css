@@ -83,6 +83,10 @@
   transition: all 0.2s;
 }
 
+.pc-projects-item-link .fa-instagram {
+  font-size: 1.15em;
+}
+
 .pc-projects-item-link:hover {
   color: var(--secondary-color);
 }

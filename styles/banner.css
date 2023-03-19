@@ -36,6 +36,7 @@
   color: var(--secondary-text-color);
   font-size: 1.2em;
   line-height: 1.4em;
+  text-align: justify;
   transition: all 0.5s;
 }
 
@@ -79,7 +80,7 @@ body[data-theme="night"] .pc-banner-background.night {
 }
 
 .pc-banner-social-link:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 @keyframes banner-background-day-animation {
