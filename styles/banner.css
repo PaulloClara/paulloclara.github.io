@@ -63,7 +63,7 @@ body[data-theme="night"] .pc-banner-background.night {
 
 .pc-banner-social-links {
   position: absolute;
-  bottom: 30px;
+  bottom: 32px;
   display: flex;
   gap: 20px;
 }

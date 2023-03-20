@@ -61,14 +61,21 @@ body[data-theme="night"] {
   background: linear-gradient(to bottom, #111, #000);
 }
 
+.pc-page-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+
 .pc-sections {
   position: relative;
   padding-bottom: 3em;
 }
 
 .pc-sections > section {
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   padding-inline: 3em;
+  scroll-snap-align: start;
 }
 
 #pc-switch-theme {
