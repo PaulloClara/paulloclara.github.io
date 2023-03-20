@@ -26,7 +26,14 @@ function runThemeScript() {
 function runBannerTypingAnimationScript() {
   try {
     new Typed("#pc-banner-typing-animation", {
-      strings: ["Paulo", "Frontender", "Criativo", "Entusiasta", "Versátil"],
+      strings: [
+        "Paulo",
+        "Dev FrontEnd",
+        "Dev Mobile",
+        "Criativo",
+        "Entusiasta",
+        "Flexível",
+      ],
       loop: true,
       typeSpeed: 120,
       backSpeed: 100,
@@ -46,7 +53,7 @@ function runScrollSmoothScript() {
         const target = document.querySelector(this.getAttribute("href"));
         if (!target) return;
 
-        target.scrollIntoView({ behavior: "smooth" });
+        target.scrollIntoView({ behavior: "smooth", block: "nearest" });
       });
     });
   } catch (error) {

@@ -61,16 +61,14 @@ body[data-theme="night"] {
   background: linear-gradient(to bottom, #111, #000);
 }
 
-#home,
-#skills,
-#projects {
-  min-height: calc(100vh - 60px);
-  padding: 0 3em;
-}
-
 .pc-sections {
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
+}
+
+.pc-sections > section {
+  min-height: calc(100vh - 60px);
+  padding-inline: 3em;
 }
 
 #pc-switch-theme {
