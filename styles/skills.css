@@ -71,7 +71,12 @@
   height: 0.5em;
   border-radius: 0.25em;
   background-color: var(--skill-color);
-  animation: skill-bar-animation 2s ease-in;
+  animation: skill-bar-animation 1.5s ease-in;
+  animation-play-state: paused;
+}
+
+.pc-skills.is-visible .pc-skills-item::after {
+  animation-play-state: running;
 }
 
 .pc-skills-item-name {
