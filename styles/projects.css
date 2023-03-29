@@ -35,7 +35,7 @@
 }
 
 .pc-projects-items {
-  --projects-items-columns: 4;
+  --projects-items-columns: 3;
 
   display: grid;
   grid-template-columns: repeat(var(--projects-items-columns), 1fr);
@@ -66,7 +66,9 @@
   margin-bottom: 12px;
   color: var(--secondary-text-color);
   text-align: justify;
-  font-size: 1em;
+  font-size: 0.9em;
+  letter-spacing: 0.25px;
+  line-height: 1.45em;
 }
 
 .pc-projects-item-links {
@@ -93,12 +95,6 @@
 
 .pc-projects-item-link:hover {
   color: var(--secondary-color);
-}
-
-@media only screen and (max-width: 960px) {
-  .pc-projects-items {
-    --projects-items-columns: 3;
-  }
 }
 
 @media only screen and (max-width: 760px) {
