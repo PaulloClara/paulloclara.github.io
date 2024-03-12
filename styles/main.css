@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -31,11 +31,14 @@ body {
   overflow-x: hidden;
   width: 100%;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  transition: all 0.5s;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.25s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body[data-theme="day"] {
+body[data-theme='day'] {
   --secondary-color: #0077be;
   --primary-text-color: #333;
   --secondary-text-color: #666;
@@ -47,7 +50,7 @@ body[data-theme="day"] {
   background-color: #fff;
 }
 
-body[data-theme="night"] {
+body[data-theme='night'] {
   --secondary-color: #00bfff;
   --primary-text-color: #fff;
   --secondary-text-color: #eee;
@@ -60,9 +63,7 @@ body[data-theme="night"] {
 }
 
 .pc-page-container {
-  max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y proximity;
+  min-height: 100vh;
 }
 
 .pc-sections,
@@ -107,12 +108,12 @@ body[data-theme="night"] {
   box-shadow: #00000029 0px 1px 4px;
 }
 
-body[data-theme="day"] #pc-switch-theme {
+body[data-theme='day'] #pc-switch-theme {
   color: var(--secondary-text-color);
   background-color: #f0f0f0;
 }
 
-body[data-theme="night"] #pc-switch-theme {
+body[data-theme='night'] #pc-switch-theme {
   color: #fff;
   background-color: #444;
 }
@@ -121,23 +122,17 @@ body[data-theme="night"] #pc-switch-theme {
   display: none;
 }
 
-body[data-theme="day"] #pc-switch-theme .fa-moon {
+body[data-theme='day'] #pc-switch-theme .fa-moon {
   display: flex;
 }
 
-body[data-theme="night"] #pc-switch-theme .fa-sun {
+body[data-theme='night'] #pc-switch-theme .fa-sun {
   display: flex;
-}
-
-@media only screen and (max-width: 1440px) {
-  body {
-    font-size: 14px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

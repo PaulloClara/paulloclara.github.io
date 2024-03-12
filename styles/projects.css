@@ -13,7 +13,7 @@
 .pc-projects-title {
   color: var(--primary-text-color);
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 600;
   transition: all 0.5s;
 }
 
@@ -35,26 +35,35 @@
 }
 
 .pc-projects-items {
-  --projects-items-columns: 3;
-
-  display: grid;
-  grid-template-columns: repeat(var(--projects-items-columns), 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 3em 1.5em;
 }
 
 .pc-projects-item {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  gap: 1em;
   list-style: none;
+  width: 100%;
+  max-width: 60em;
 }
 
 .pc-projects-item-preview {
+  display: flex;
   width: 100%;
-  object-fit: contain;
+  max-width: 20em;
+  object-fit: cover;
+  object-position: top left;
   user-select: none;
   pointer-events: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: #0000000d 0px 0px 0px 1px;
+  flex: none;
+}
+
+.pc-projects-item-infos {
+  display: flex;
+  flex-direction: column;
 }
 
 .pc-projects-item-name {
@@ -63,7 +72,7 @@
 }
 
 .pc-projects-item-description {
-  margin-bottom: 12px;
+  margin-block: 12px 24px;
   color: var(--secondary-text-color);
   text-align: justify;
   font-size: 0.9em;
@@ -97,14 +106,15 @@
   color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 760px) {
-  .pc-projects-items {
-    --projects-items-columns: 2;
+@media only screen and (max-width: 640px) {
+  .pc-projects-item {
+    flex-direction: column;
+    max-width: 32em;
+    align-items: center;
   }
-}
 
-@media only screen and (max-width: 460px) {
-  .pc-projects-items {
-    --projects-items-columns: 1;
+  .pc-projects-item-preview {
+    max-width: unset;
+    max-height: 12em;
   }
 }

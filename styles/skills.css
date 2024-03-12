@@ -13,7 +13,7 @@
 .pc-skills-title {
   color: var(--primary-text-color);
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 600;
   transition: all 0.5s;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .pc-skills-item::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -63,7 +63,7 @@
 }
 
 .pc-skills-item::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
