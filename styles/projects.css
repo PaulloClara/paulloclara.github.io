@@ -75,7 +75,8 @@
   margin-block: 12px 24px;
   color: var(--secondary-text-color);
   text-align: justify;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: 400;
   letter-spacing: 0.25px;
   line-height: 1.45em;
 }

@@ -33,7 +33,6 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
-  transition: all 0.25s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

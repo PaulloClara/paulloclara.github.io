@@ -18,7 +18,7 @@ function runThemeScript() {
 
     switchBackgroundSoundByTheme(bodyPageEl.dataset.theme)
   } catch (error) {
-    console.error(error)
+    showDevelopError(error)
   }
 }
 
@@ -32,7 +32,7 @@ function runBannerTypingAnimationScript() {
       backDelay: 1200,
     })
   } catch (error) {
-    console.error(error)
+    showDevelopError(error)
   }
 }
 
@@ -49,7 +49,7 @@ function runScrollSmoothScript() {
       })
     })
   } catch (error) {
-    console.error(error)
+    showDevelopError(error)
   }
 }
 
@@ -58,7 +58,7 @@ function runBackgroundSoundScript() {
     const backgroundSoundEl = document.querySelector('#pc-background-sound')
     backgroundSoundEl.volume = 0.05
   } catch (error) {
-    console.error(error)
+    showDevelopError(error)
   }
 }
 
@@ -71,7 +71,7 @@ function switchBackgroundSoundByTheme(theme) {
     backgroundSoundEl.load()
     backgroundSoundEl.play()
   } catch (error) {
-    console.error(error)
+    showDevelopError(error)
   }
 }
 
@@ -93,6 +93,12 @@ function runSkillsAnimationScript() {
   skillsSectionEl.forEach((element) => {
     observer.observe(element)
   })
+}
+
+function showDevelopError(error) {
+  if (window.location.protocol === 'http:') {
+    console.error(error)
+  }
 }
 
 runThemeScript()
