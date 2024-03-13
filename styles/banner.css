@@ -37,7 +37,7 @@
   font-size: 1.2em;
   line-height: 1.4em;
   text-align: justify;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 }
 
 .pc-banner-background {

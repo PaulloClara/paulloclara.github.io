@@ -62,8 +62,12 @@ function runBackgroundSoundScript() {
   }
 }
 
-function switchBackgroundSoundByTheme(theme) {
+async function switchBackgroundSoundByTheme(theme) {
   try {
+    if ((await navigator.getAutoplayPolicy('mediaelement')) !== 'allowed') {
+      return
+    }
+
     const backgroundSoundEl = document.querySelector('#pc-background-sound')
     backgroundSoundEl.pause()
     const currentSound = theme === 'day' ? 'sounds/hollow-knight.mp3' : 'sounds/radiance.mp3'
