@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.5s;
 }
 
 .pc-banner-content {
@@ -16,14 +15,12 @@
   color: var(--primary-text-color);
   font-size: 2em;
   font-weight: 200;
-  transition: all 0.5s;
 }
 
 .pc-banner-content h1 {
   color: var(--primary-text-color);
   font-size: 4.2em;
   font-weight: 700;
-  transition: all 0.5s;
 }
 
 .pc-banner-content h1 span {
@@ -37,7 +34,6 @@
   font-size: 1.2em;
   line-height: 1.4em;
   text-align: justify;
-  /* transition: all 0.5s; */
 }
 
 .pc-banner-background {
@@ -76,7 +72,7 @@ body[data-theme='night'] .pc-banner-background.night {
   color: var(--primary-text-color);
   font-size: 1.75em;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .pc-banner-social-link:hover {

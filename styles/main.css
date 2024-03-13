@@ -54,11 +54,11 @@ body[data-theme='night'] {
   --primary-text-color: #fff;
   --secondary-text-color: #eee;
 
-  --scrollbar-track-background: #000;
-  --scrollbar-thumb-background: #222;
-  --scrollbar-thumb-hover-background: #333;
+  --scrollbar-track-background: #09090b;
+  --scrollbar-thumb-background: #18181b;
+  --scrollbar-thumb-hover-background: #27272a;
 
-  background: linear-gradient(to bottom, #111, #000);
+  background: #09090b;
 }
 
 .pc-page-container {

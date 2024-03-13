@@ -14,7 +14,6 @@
   color: var(--primary-text-color);
   font-size: 2em;
   font-weight: 600;
-  transition: all 0.5s;
 }
 
 .pc-projects-title b {
@@ -30,7 +29,6 @@
   color: var(--secondary-text-color);
   font-size: 1.1em;
   line-height: 1.4em;
-  transition: all 0.5s;
   text-align: justify;
 }
 
@@ -96,7 +94,7 @@
   color: var(--primary-text-color);
   font-size: 1em;
   font-weight: 600;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .pc-projects-item-link .fa-instagram {
